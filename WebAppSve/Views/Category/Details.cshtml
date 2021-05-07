@@ -1,0 +1,31 @@
+﻿@model Business.Category
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<ol class="breadcrumb">
+    <li><a href="~/">Categorias</a></li>
+    <li class="active">@(Model.Name)</li>
+</ol>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Informação da Categoria</div>
+    <div class="panel-body">
+        <dl class="dl-horizontal">
+            <dt>Código</dt>
+            <dd>@Model.Id</dd>
+
+            <dt>Nome</dt>
+            <dd>@Model.Name</dd>
+
+            <dt>Descrição</dt>
+            <dd>@Model.Description</dd>
+
+            <dt>Data de Cadastro</dt>
+            <dd>@Model.DateRegister</dd>
+        </dl>
+        <div class="form-actions">
+            |@Html.ActionLink("Voltar a Lista", "Index");
+        </div>
+    </div>
+</div>

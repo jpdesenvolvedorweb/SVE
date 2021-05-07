@@ -1,9 +1,12 @@
 D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Database.deps.json
 D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Database.dll
+D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Database.pdb
+D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Entities.dll
+D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Entities.pdb
 D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.csprojAssemblyReference.cache
+D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.csproj.CoreCompileInputs.cache
 D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfoInputs.cache
 D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfo.cs
-D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.csproj.CoreCompileInputs.cache
-D:\Projeto.Net\SVE\AppSve\Database\bin\Debug\netcoreapp3.1\Database.pdb
+D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.csproj.CopyComplete
 D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.dll
 D:\Projeto.Net\SVE\AppSve\Database\obj\Debug\netcoreapp3.1\Database.pdb

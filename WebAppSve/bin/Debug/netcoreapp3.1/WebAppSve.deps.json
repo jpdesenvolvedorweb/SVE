@@ -1768,7 +1768,8 @@
       },
       "Business/1.0.0": {
         "dependencies": {
-          "Database": "1.0.0"
+          "Database": "1.0.0",
+          "Entities": "1.0.0"
         },
         "runtime": {
           "Business.dll": {}
@@ -1779,6 +1780,7 @@
       },
       "Database/1.0.0": {
         "dependencies": {
+          "Entities": "1.0.0",
           "System.Configuration.ConfigurationManager": "5.0.0",
           "System.Data.SqlClient": "4.8.2"
         },
@@ -1787,6 +1789,14 @@
         },
         "compile": {
           "Database.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "runtime": {
+          "Entities.dll": {}
+        },
+        "compile": {
+          "Entities.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4318,6 +4328,11 @@
       "sha512": ""
     },
     "Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,12 +1,14 @@
 D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Business.deps.json
 D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Business.dll
 D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Business.pdb
+D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Database.dll
+D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Entities.dll
+D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Database.pdb
+D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Entities.pdb
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.dll
 D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.pdb
-D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Database.dll
-D:\Projeto.Net\SVE\AppSve\Business\bin\Debug\netcoreapp3.1\Database.pdb
-D:\Projeto.Net\SVE\AppSve\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete

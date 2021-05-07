@@ -43,23 +43,41 @@ namespace Database
             return (int)id;
         }
 
+
+
         public DataTable List()
         {
-            return List(string.Empty);
+            int id = 0;
+            return List(string.Empty, id);
         }
 
-        public DataTable List(string name)
+        public DataTable List(int id)
+        {
+            return List(string.Empty, id);
+        }
+
+        public DataTable List(string name, int id)
         {
             DataTable table = new DataTable();
 
-            string script = @"SELECT * FROM Categorias ORDER BY nome" ;
+            string script = @"SELECT * FROM Categorias ORDER BY nome";
 
             if (!string.IsNullOrEmpty(name))
                 script = @"SELECT * FROM Categorias WHERE nome LIKE '% @Nome %' ORDER BY nome";
 
+            if (id != 0)
+                script = @"SELECT * FROM Categorias WHERE id = @id";
+
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 SqlCommand cmd = new SqlCommand(script, conn);
+
+                if (id != 0)
+                {
+                    cmd.Parameters.Add("@id", SqlDbType.Int);
+                    cmd.Parameters["@id"].Value = id;
+                }
+
                 if (!string.IsNullOrEmpty(name))
                 {
                     cmd.Parameters.Add("@Nome", SqlDbType.VarChar);
@@ -83,12 +101,15 @@ namespace Database
             return table;
         }
 
-        public void Alter(string name, string description)
+        public void Alter(int id, string name, string description)
         {
-            string script = "UPDATE @categorias SET nome = @Nome, descricao = @Descricao WHERE id = @Id";
+            string script = @"UPDATE Categorias SET nome = @Nome, descricao = @Descricao WHERE id = @Id";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 SqlCommand cmd = new SqlCommand(script, conn);
+
+                cmd.Parameters.Add("@Id", SqlDbType.Int);
+                cmd.Parameters["@id"].Value = id;
 
                 cmd.Parameters.Add("@Nome", SqlDbType.VarChar);
                 cmd.Parameters["@nome"].Value = name;

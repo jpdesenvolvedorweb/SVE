@@ -1,5 +1,5 @@
 ﻿using Business;
-using Microsoft.AspNetCore.Http;
+using Entities.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAppSve.Controllers
@@ -15,7 +15,7 @@ namespace WebAppSve.Controllers
         // GET: Category/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(new Category().List(id));
         }
 
         // GET: Category/Create
@@ -29,54 +29,47 @@ namespace WebAppSve.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Category category)
         {
+            
             category.Save();
+            MessageError();
             return View("Create");
         }
 
         // GET: Category/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(new Category().List(id));
         }
 
         // POST: Category/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Category category)
         {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            category.Save();
+            MessageError();
+            return View();
         }
 
         // GET: Category/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(new Category().List(id));
         }
 
         // POST: Category/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(Category category)
         {
-            try
-            {
-                // TODO: Add delete logic here
+            category.Delete();
+            MessageError();
+            return RedirectToAction("Index");
+        }
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+        private void MessageError()
+        {
+            ViewBag.MessageError = Message.Show();
         }
     }
 }
